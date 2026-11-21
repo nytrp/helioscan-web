@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HELIOSCAN PRO · Informes termográficos IEC 62446-3 para plantas solares</title>
+<meta name="description" content="Programa para Windows que convierte las fotos térmicas del dron DJI en el informe PDF de su planta solar, con cada anomalía ubicada en su mesa y clasificada según IEC TS 62446-3. Hecho en Colombia.">
+<link rel="canonical" href="https://helioscan.co/">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HELIOSCAN PRO · Termografía de plantas solares con dron">
+<meta property="og:description" content="Del vuelo térmico al informe PDF, con cada falla ubicada en su mesa y clasificada según IEC TS 62446-3.">
+<meta property="og:url" content="https://helioscan.co/">
+<meta property="og:image" content="https://helioscan.co/img/og.jpg">
+<meta property="og:locale" content="es_CO">
+<meta name="theme-color" content="#0B1120">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "HELIOSCAN PRO",
+  "operatingSystem": "Windows 10, Windows 11",
+  "applicationCategory": "BusinessApplication",
+  "description": "Informes termográficos de plantas solares a partir de fotos radiométricas de drones DJI, con cada anomalía ubicada en su mesa y clasificada según IEC TS 62446-3.",
+  "url": "https://helioscan.co/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "HELIOSCAN PRO",
+    "email": "isaacesteban@helioscan.co",
+    "address": {"@type": "PostalAddress", "addressLocality": "Barranquilla", "addressCountry": "CO"}
+  }
+}
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#inicio" aria-label="HELIOSCAN PRO, inicio">
+      <img src="img/logo.png" alt="" width="36" height="36">
+      <span>HELIOSCAN <b>PRO</b></span>
+    </a>
+    <nav aria-label="Principal">
+      <ul class="nav">
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#informe">El informe</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#preguntas">Preguntas</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-sm" href="#contacto">Agendar demo</a>
+  </div>
+</header>
+
+<main id="contenido">
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <p class="eyebrow">Termografía de plantas fotovoltaicas · IEC TS 62446-3</p>
+      <h1>Del vuelo térmico con dron al informe de su planta solar, <span class="hl">con cada falla ubicada en su mesa</span>.</h1>
+      <p class="lead">HELIOSCAN PRO es un programa para Windows que toma las fotos radiométricas del dron DJI, las cruza con el plano de la planta y genera el informe PDF con el ΔT y la clasificación de cada anomalía. Sin revisar foto por foto ni armar el documento a mano.</p>
+      <div class="cta-row">
+        <a class="btn" href="#contacto">Pedir piloto sin costo</a>
+        <a class="btn btn-ghost" href="https://wa.me/573012293611?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20de%20HELIOSCAN%20PRO" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      </div>
+      <ul class="chips" aria-label="Compatibilidad">
+        <li>DJI R-JPEG</li><li>KMZ · KML · DXF · DWG · SHP</li><li>PDF con su logo</li><li>Sin subir fotos a la nube</li>
+      </ul>
+    </div>
+  </div>
+  <figure class="hero-shot wrap">
+    <img src="img/termica_mqr022.webp" width="1600" height="543" alt="Imagen térmica de una fila de paneles solares; un recuadro SQ1 marca una celda a 88,2 °C frente a 52,8 °C de promedio.">
+    <figcaption><b>Mesa MQR022</b> · celda caliente a 88,2 °C, ΔT 38,9 °C, severidad crítica. Detectada, ubicada en su mesa y diagnosticada por el programa.</figcaption>
+  </figure>
+</section>
+
+<!-- PROBLEMA -->
+<section class="band">
+  <div class="wrap two">
+    <div>
+      <h2>La parte lenta no es el vuelo. Es el informe.</h2>
+      <p>Después de volar una planta de varios megavatios quedan cientos o miles de fotos térmicas. Alguien tiene que abrirlas una por una, marcar los puntos calientes, averiguar en qué mesa está cada uno y armar el documento para el cliente. Es trabajo repetitivo, cada inspector lo hace distinto y es fácil que una falla quede mal ubicada.</p>
+    </div>
+    <ul class="stats">
+      <li><b>Por mesa</b><span>no solo por coordenada: el técnico de O&amp;M sabe a dónde ir</span></li>
+      <li><b>IEC TS 62446-3</b><span>clasificación y ΔT con el mismo criterio en cada planta</span></li>
+      <li><b>100 % local</b><span>las fotos y planos se procesan en su computador</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como-funciona" class="section">
+  <div class="wrap">
+    <p class="eyebrow">Cómo funciona</p>
+    <h2>Cuatro pasos, en su propio computador</h2>
+    <ol class="steps">
+      <li>
+        <span class="n">1</span>
+        <h3>Cargue las fotos del vuelo</h3>
+        <p>Imágenes térmicas radiométricas DJI (R-JPEG) y visuales del mismo vuelo, desde una carpeta o un archivo .zip.</p>
+      </li>
+      <li>
+        <span class="n">2</span>
+        <h3>Cruce con el plano</h3>
+        <p>KMZ, KML, GeoJSON, DXF, DWG o Shapefile. Cada foto queda asociada a su mesa o subcampo, respetando los nombres de su plano.</p>
+      </li>
+      <li>
+        <span class="n">3</span>
+        <h3>Detección y clasificación</h3>
+        <p>Lectura de la temperatura real de cada píxel, marcación de puntos calientes (SQ1, SQ2…) con su ΔT y diagnóstico según IEC TS 62446-3.</p>
+      </li>
+      <li>
+        <span class="n">4</span>
+        <h3>Revise y entregue</h3>
+        <p>Editor en vivo de textos, recuadros y fotos. Informe PDF apaisado listo para el cliente final, con su logo, y mapa de anomalías sobre el plano.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- INFORME -->
+<section id="informe" class="section alt">
+  <div class="wrap two media-right">
+    <div>
+      <p class="eyebrow">El informe</p>
+      <h2>Un informe que el equipo de O&amp;M puede usar al día siguiente</h2>
+      <ul class="checks">
+        <li>Página por mesa con la foto térmica, la foto visual y los recuadros de cada anomalía.</li>
+        <li>Temperatura mínima, promedio y máxima, ΔT y severidad según IEC TS 62446-3.</li>
+        <li>Diagnóstico y recomendación escritos para cada hallazgo, editables antes de entregar.</li>
+        <li>Índice visual de todas las mesas inspeccionadas.</li>
+        <li>Con el logo y los datos de su empresa.</li>
+        <li>En español, inglés o portugués.</li>
+      </ul>
+    </div>
+    <figure class="shot">
+      <img src="img/informe_mqr022.webp" width="1400" height="989" loading="lazy" alt="Página de un informe termográfico de HELIOSCAN PRO para la mesa MQR022, con foto térmica, foto visual, tabla de temperaturas y diagnóstico.">
+      <figcaption>Página de muestra del informe (planta de ejemplo).</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- MAS ALLA -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">Más allá del PDF</p>
+    <h2>Seguimiento de la planta, no solo de un vuelo</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Resumen ejecutivo</h3>
+        <p>Consolidado de anomalías por tipo y por criticidad para la gerencia y el cliente final.</p>
+      </article>
+      <article class="card">
+        <h3>Seguimiento de reparación</h3>
+        <p>Cada anomalía pasa de pendiente a reparada y a verificada. El historial queda guardado por cliente y por planta.</p>
+      </article>
+      <article class="card">
+        <h3>Comparación entre vuelos</h3>
+        <p>Compare una inspección con la anterior: qué se reparó, qué sigue y qué apareció nuevo.</p>
+      </article>
+      <article class="card">
+        <h3>Pérdida estimada de energía</h3>
+        <p>Cálculo de la energía que se pierde por las fallas detectadas, con supuestos que usted puede ajustar.</p>
+      </article>
+      <article class="card">
+        <h3>Exportación</h3>
+        <p>Excel y CSV para sus sistemas, y KMZ para ver las anomalías en Google Earth.</p>
+      </article>
+      <article class="card">
+        <h3>Clientes y proyectos</h3>
+        <p>Clientes, plantas, planos y vuelos organizados en la misma aplicación. Actualizaciones automáticas firmadas digitalmente.</p>
+      </article>
+    </div>
+    <figure class="shot wide">
+      <img src="img/indice_mesas.webp" width="1400" height="989" loading="lazy" alt="Índice del informe con miniaturas térmicas de cada mesa inspeccionada, identificadas como MQR001, MQR020, MQR022 y siguientes.">
+      <figcaption>Índice de mesas del informe: cada miniatura lleva el código de mesa del plano del cliente.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- PRIVACIDAD -->
+<section class="band">
+  <div class="wrap two">
+    <div>
+      <h2>Sus fotos se quedan con usted</h2>
+      <p>HELIOSCAN PRO procesa todo en el computador donde está instalado. Las fotos del dron y los planos de sus clientes no se suben a ningún servidor. El programa funciona sin internet; la conexión solo se usa para actualizaciones y para la redacción asistida, que es opcional.</p>
+    </div>
+    <div>
+      <h2>Para quién es</h2>
+      <ul class="tags">
+        <li>Empresas de O&amp;M</li>
+        <li>Ingenierías y EPC</li>
+        <li>Operadores de dron</li>
+        <li>Minigranjas y autogeneradores</li>
+        <li>Propietarios de activos solares</li>
+      </ul>
+      <p class="muted small">Requisitos: Windows 10 u 11 de 64 bits y un dron DJI con cámara térmica radiométrica.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PLANES -->
+<section id="planes" class="section">
+  <div class="wrap">
+    <p class="eyebrow">Planes</p>
+    <h2>Pruébelo primero con un vuelo de su planta</h2>
+    <div class="plans">
+      <article class="plan featured">
+        <h3>Piloto</h3>
+        <p class="price">Sin costo</p>
+        <p>Uso completo durante 15 días en un equipo. Procesamos juntos un vuelo real de una de sus plantas y compara el resultado con su informe actual.</p>
+        <a class="btn" href="#contacto">Pedir piloto</a>
+      </article>
+      <article class="plan">
+        <h3>Anual</h3>
+        <p class="price">Por equipo</p>
+        <p>Para equipos con inspecciones todo el año. Incluye actualizaciones y soporte durante la vigencia.</p>
+        <a class="btn btn-ghost" href="#contacto">Pedir cotización</a>
+      </article>
+      <article class="plan">
+        <h3>Perpetua</h3>
+        <p class="price">Pago único</p>
+        <p>Licencia sin vencimiento con 12 meses de actualizaciones y soporte. Renovación de soporte opcional.</p>
+        <a class="btn btn-ghost" href="#contacto">Pedir cotización</a>
+      </article>
+      <article class="plan">
+        <h3>Multi-equipo</h3>
+        <p class="price">Desde 3 equipos</p>
+        <p>Para empresas con varios inspectores. Desde 5 equipos, valor a convenir.</p>
+        <a class="btn btn-ghost" href="#contacto">Pedir cotización</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="preguntas" class="section alt">
+  <div class="wrap narrow">
+    <p class="eyebrow">Preguntas frecuentes</p>
+    <h2>Lo que nos preguntan</h2>
+    <details>
+      <summary>¿Qué drones y cámaras son compatibles?</summary>
+      <p>Drones DJI con cámara térmica radiométrica que guarden las fotos en formato R-JPEG. Si usa otra cámara, escríbanos y lo revisamos con fotos de muestra.</p>
+    </details>
+    <details>
+      <summary>¿Necesito el plano de la planta?</summary>
+      <p>Para ubicar cada falla en su mesa, sí: sirve un KMZ, KML, GeoJSON, DXF, DWG o Shapefile con las mesas o subcampos. El programa respeta los nombres de mesa de su plano.</p>
+    </details>
+    <details>
+      <summary>¿Las fotos se suben a internet?</summary>
+      <p>No. Todo se procesa en su computador. Las fotos y los planos no salen del equipo.</p>
+    </details>
+    <details>
+      <summary>¿Puedo editar el informe antes de entregarlo?</summary>
+      <p>Sí. El editor permite mover o agregar recuadros, cambiar textos, diagnósticos y fotos, y ver el resultado en vivo antes de exportar el PDF.</p>
+    </details>
+    <details>
+      <summary>¿Qué incluye el piloto sin costo?</summary>
+      <p>Una licencia completa por 15 días en un equipo, acompañamiento en la instalación y en el primer informe, y una reunión para revisar los resultados con su equipo.</p>
+    </details>
+    <details>
+      <summary>¿Ofrecen el servicio de procesamiento, o solo el programa?</summary>
+      <p>El producto es el programa, para que su equipo genere sus propios informes. Si necesita que procesemos un vuelo puntual, escríbanos y lo conversamos.</p>
+    </details>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="section contact">
+  <div class="wrap two">
+    <div>
+      <p class="eyebrow">Contacto</p>
+      <h2>Agende una demostración con un vuelo de su planta</h2>
+      <p>En 30 minutos le mostramos el programa procesando un vuelo real. Si tiene a mano un vuelo térmico reciente y el plano de la planta, lo procesamos en vivo.</p>
+    </div>
+    <div class="contact-card">
+      <a class="contact-line" href="mailto:isaacesteban@helioscan.co?subject=Demo%20HELIOSCAN%20PRO">
+        <span class="k">Correo</span><span class="v">isaacesteban@helioscan.co</span>
+      </a>
+      <a class="contact-line" href="https://wa.me/573012293611?text=Hola%2C%20quiero%20agendar%20una%20demo%20de%20HELIOSCAN%20PRO" target="_blank" rel="noopener">
+        <span class="k">WhatsApp</span><span class="v">+57 301 229 3611</span>
+      </a>
+      <div class="contact-line static">
+        <span class="k">Ubicación</span><span class="v">Barranquilla, Colombia · atención en Latinoamérica</span>
+      </div>
+      <p class="who">Isaac Esteban · Fundador</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <div class="brand small">
+      <img src="img/logo.png" alt="" width="28" height="28">
+      <span>HELIOSCAN <b>PRO</b></span>
+    </div>
+    <p>© <span id="y">2026</span> HELIOSCAN PRO · Barranquilla, Colombia</p>
+    <p><a href="privacidad.html">Política de tratamiento de datos</a></p>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
